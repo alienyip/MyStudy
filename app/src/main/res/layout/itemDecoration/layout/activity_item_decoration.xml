@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.example.mystudy.itemDecoration.ItemDecorationActivity">
+
+    <Button
+        android:id="@+id/btn_divider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分割线"
+        android:textSize="24sp"
+        />
+    <Button
+        android:id="@+id/btn_divider1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="颜色分割线"
+        android:textSize="24sp"
+        />
+    <Button
+        android:id="@+id/btn_divider2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="时间轴"
+        android:textSize="24sp"
+        />
+    <Button
+        android:id="@+id/btn_divider3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="排行榜"
+        android:textSize="24sp"
+        />
+    <Button
+        android:id="@+id/btn_divider4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="普通头部实例"
+        android:textSize="24sp"
+        />
+    <Button
+        android:id="@+id/btn_divider5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="悬停头部示例"
+        android:textSize="24sp"
+        />
+
+</LinearLayout>

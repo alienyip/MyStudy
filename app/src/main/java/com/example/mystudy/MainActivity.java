@@ -21,7 +21,6 @@ import com.example.mystudy.stretchableFloatingBtn.StretchableFloatingBtnActivity
 import com.example.mystudy.tabLayout.TabLayoutActivity;
 import com.example.mystudy.ultimateBar.UltimateBarActivity;
 import com.example.mystudy.viewPagerTitle.ViewPagerTitleActivity;
-
 import java.util.ArrayList;
 import java.util.List;
 

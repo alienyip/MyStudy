@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-
 import com.example.mystudy.auditProgressView.AuditProgressViewActivity;
 import com.example.mystudy.autoScrollBack.AutoScrollBackActivity;
 import com.example.mystudy.cehuaDemo.CehuaActivity;

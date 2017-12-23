@@ -9,8 +9,16 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/autoscrollback" />
             <option value="$PROJECT_DIR$/expandablelibrary" />
+            <option value="$PROJECT_DIR$/imagepicker" />
             <option value="$PROJECT_DIR$/loadbutton" />
+            <option value="$PROJECT_DIR$/ncalendar" />
+            <option value="$PROJECT_DIR$/nicedialog" />
+            <option value="$PROJECT_DIR$/refreshview" />
+            <option value="$PROJECT_DIR$/stretchablefloatingbutton" />
+            <option value="$PROJECT_DIR$/ultimatebar" />
+            <option value="$PROJECT_DIR$/viewpagertitle" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

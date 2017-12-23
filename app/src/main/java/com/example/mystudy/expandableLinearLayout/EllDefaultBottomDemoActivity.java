@@ -11,12 +11,8 @@ import com.example.expandablelibrary.ExpandableLinearLayout;
 import com.example.mystudy.R;
 import com.example.mystudy.expandableLinearLayout.bean.ProductBean;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
-
 public class EllDefaultBottomDemoActivity extends AppCompatActivity {
 
-    @Bind(R.id.ell_product)
     ExpandableLinearLayout ellProduct;
 
     private String[] imgUrls = new String[]{
@@ -45,7 +41,7 @@ public class EllDefaultBottomDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ell_default_bottom_demo);
-        ButterKnife.bind(this);
+        ellProduct = (ExpandableLinearLayout)findViewById(R.id.ell_product);
 
         ellProduct.removeAllViews();//清除所有的子View（避免重新刷新数据时重复添加）
         //添加数据
@@ -59,19 +55,18 @@ public class EllDefaultBottomDemoActivity extends AppCompatActivity {
     }
 
     class ViewHolder {
-        @Bind(R.id.iv_img)
         ImageView ivImg;
-        @Bind(R.id.tv_name)
         TextView tvName;
-        @Bind(R.id.tv_intro)
         TextView tvIntro;
-        @Bind(R.id.tv_price)
         TextView tvPrice;
 
         ProductBean productBean;
 
         public ViewHolder(View view, ProductBean productBean) {
-            ButterKnife.bind(this, view);
+            ivImg = (ImageView)view.findViewById(R.id.iv_img);
+            tvName = (TextView)view.findViewById(R.id.tv_name);
+            tvIntro = (TextView)view.findViewById(R.id.tv_intro);
+            tvPrice = (TextView)view.findViewById(R.id.tv_price);
             this.productBean = productBean;
         }
 

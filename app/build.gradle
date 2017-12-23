@@ -1,12 +1,14 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+
     defaultConfig {
         applicationId "com.example.mystudy"
-        minSdkVersion 15
-        targetSdkVersion 25
+        minSdkVersion 16
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -28,7 +30,20 @@ android {
                             'src/main/res/layout/expandable',
                             'src/main/res/layout/itemDecoration',
                             'src/main/res/layout/loadButton',
-                            'src/main/res/layout/popupWindow'
+                            'src/main/res/layout/popupWindow',
+                            'src/main/res/layout/bouncingBall',
+                            'src/main/res/layout/springAnimation',
+                            'src/main/res/layout/niceDialog',
+                            'src/main/res/layout/stretchableFloatingBtn',
+                            'src/main/res/layout/viewPagerTitle',
+                            'src/main/res/layout/doodleView',
+                            'src/main/res/layout/autoScrollBack',
+                            'src/main/res/layout/matisse',
+                            'src/main/res/layout/ultimateBar',
+                            'src/main/res/layout/refreshView',
+                            'src/main/res/layout/auditProgressView',
+                            'src/main/res/layout/imagePicker',
+                            'src/main/res/layout/tabLayout'
                     ]
         }
     }
@@ -41,12 +56,26 @@ dependencies {
     })
     compile project(':loadbutton')
     compile project(':expandablelibrary')
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-    compile 'com.android.support:cardview-v7:25.3.1'
+    compile project(':nicedialog')
+    compile project(':stretchablefloatingbutton')
+    compile 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
     compile 'com.dyhdyh.loadingbar:loadingbar:1.4.4'
-    compile 'com.jakewharton:butterknife:7.0.0'
     compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile 'com.android.support:support-dynamic-animation:26.1.0'
     testCompile 'junit:junit:4.12'
+    compile project(':viewpagertitle')
+    implementation project(':autoscrollback')
+    compile 'com.zhihu.android:matisse:0.4.3'
+    implementation project(':ultimatebar')
+    implementation project(':refreshview')
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    implementation project(':imagepicker')
+}
+repositories {
+    mavenCentral()
 }

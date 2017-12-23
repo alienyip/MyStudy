@@ -5,12 +5,25 @@ import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.example.mystudy.auditProgressView.AuditProgressViewActivity;
+import com.example.mystudy.autoScrollBack.AutoScrollBackActivity;
+import com.example.mystudy.bouncingBall.BouncingBallActivity;
 import com.example.mystudy.cehuaDemo.CehuaActivity;
+import com.example.mystudy.doodleView.DoodleViewActivity;
 import com.example.mystudy.expandableLinearLayout.ExpandableActivity;
+import com.example.mystudy.imagePicker.ImagePickerActivity;
 import com.example.mystudy.itemDecoration.ItemDecorationActivity;
 import com.example.mystudy.loadButton.LoadButtonActivity;
+import com.example.mystudy.matisse.MatisseActivity;
 import com.example.mystudy.ncalendardemo.NCalendarActivity;
+import com.example.mystudy.niceDialog.NiceDialogActivity;
 import com.example.mystudy.popupWindow.PopupWindowActivity;
+import com.example.mystudy.refreshView.RefreshViewActivity;
+import com.example.mystudy.springAnimation.SpringAnimationActivity;
+import com.example.mystudy.stretchableFloatingBtn.StretchableFloatingBtnActivity;
+import com.example.mystudy.tabLayout.TabLayoutActivity;
+import com.example.mystudy.ultimateBar.UltimateBarActivity;
+import com.example.mystudy.viewPagerTitle.ViewPagerTitleActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,10 +36,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initdemos();
+
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
+
+        initdemos();
         MyAdapter adapter = new MyAdapter(demoList);
         recyclerView.setAdapter(adapter);
     }
@@ -44,5 +59,31 @@ public class MainActivity extends AppCompatActivity {
         demoList.add(expandable);
         Demo ncalendar = new Demo("NCalendar", NCalendarActivity.class, "http://blog.csdn.net/y12345654321/article/details/73331253");
         demoList.add(ncalendar);
+        Demo bouncingBall = new Demo("BouncingBall", BouncingBallActivity.class, "http://blog.csdn.net/z1289042324/article/details/77861973?locationNum=5&fps=1");
+        demoList.add(bouncingBall);
+        Demo springAnimation = new Demo("SpringAnimation", SpringAnimationActivity.class, "http://blog.csdn.net/qq_34902522/article/details/77651799");
+        demoList.add(springAnimation);
+        Demo niceDialog = new Demo("NiceDialog", NiceDialogActivity.class,"http://www.jianshu.com/p/0529433d4522");
+        demoList.add(niceDialog);
+        Demo stretchableFloatingBtn = new Demo("StretchableFloatingBtn", StretchableFloatingBtnActivity.class, "http://blog.csdn.net/vroymond/article/details/76472551");
+        demoList.add(stretchableFloatingBtn);
+        Demo viewPagerTitle = new Demo("ViewPagerTitle", ViewPagerTitleActivity.class, "http://www.jianshu.com/p/77e811e1c987");
+        demoList.add(viewPagerTitle);
+        Demo doodleView = new Demo("DoodleView", DoodleViewActivity.class, "http://www.jianshu.com/p/f05f71446771");
+        demoList.add(doodleView);
+        Demo autoScrollBack = new Demo("AutoScrollBack", AutoScrollBackActivity.class, "https://github.com/gaoneng102/AutoScrollBackLayout");
+        demoList.add(autoScrollBack);
+        Demo matisse = new Demo("Matisse", MatisseActivity.class, "http://www.jianshu.com/p/382346bf0aa9");
+        demoList.add(matisse);
+        Demo ultimateBar = new Demo("UltimateBar", UltimateBarActivity.class, "http://www.jianshu.com/p/b4d5a307f793");
+        demoList.add(ultimateBar);
+        Demo refreshView = new Demo("RefreshView", RefreshViewActivity.class, "http://www.jianshu.com/p/1a82cdab2249");
+        demoList.add(refreshView);
+        Demo auditProgressView = new Demo("AuditProgressView", AuditProgressViewActivity.class, "http://blog.csdn.net/qq_33553515/article/details/78356028");
+        demoList.add(auditProgressView);
+        Demo imagePicker = new Demo("ImagePicker", ImagePickerActivity.class, "http://www.jianshu.com/p/8561b1d1f763");
+        demoList.add(imagePicker);
+        Demo tabLayout = new Demo("TabLayout", TabLayoutActivity.class, "http://blog.csdn.net/qq_27258799/article/details/78413926");
+        demoList.add(tabLayout);
     }
 }

@@ -15,19 +15,13 @@ import com.example.mystudy.expandableLinearLayout.bean.ProductBean;
 
 import org.w3c.dom.Text;
 
-import butterknife.Bind;
-import butterknife.ButterKnife;
 
 public class EllCustomBottomDemoActivity extends AppCompatActivity {
 
 
-    @Bind(R.id.ell_product)
     ExpandableLinearLayout ellProduct;
-    @Bind(R.id.tv_tip)
     TextView tvTip;
-    @Bind(R.id.iv_arrow)
     ImageView ivArrow;
-    @Bind(R.id.rl_bottom)
     RelativeLayout rlBottom;
 
     private String[] imgUrls = new String[]{
@@ -56,7 +50,11 @@ public class EllCustomBottomDemoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ell_custom_bottom_demo);
-        ButterKnife.bind(this);
+        ellProduct = (ExpandableLinearLayout)findViewById(R.id.ell_product);
+        tvTip = (TextView)findViewById(R.id.tv_tip);
+        ivArrow = (ImageView)findViewById(R.id.iv_arrow);
+        rlBottom = (RelativeLayout)findViewById(R.id.rl_bottom);
+
 
         ellProduct.removeAllViews();//清除所有的子View（避免重新刷新数据时重复添加）
         //添加数据
@@ -102,19 +100,18 @@ public class EllCustomBottomDemoActivity extends AppCompatActivity {
     }
 
     class ViewHolder {
-        @Bind(R.id.iv_img)
         ImageView ivImg;
-        @Bind(R.id.tv_name)
         TextView tvName;
-        @Bind(R.id.tv_intro)
         TextView tvIntro;
-        @Bind(R.id.tv_price)
         TextView tvPrice;
 
         ProductBean productBean;
 
         public ViewHolder(View view, ProductBean productBean) {
-            ButterKnife.bind(this, view);
+            ivImg = (ImageView)view.findViewById(R.id.iv_img);
+            tvName = (TextView)view.findViewById(R.id.tv_name);
+            tvIntro = (TextView)view.findViewById(R.id.tv_intro);
+            tvPrice = (TextView)view.findViewById(R.id.tv_price);
             this.productBean = productBean;
         }
 

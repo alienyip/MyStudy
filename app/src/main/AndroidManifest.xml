@@ -3,8 +3,11 @@
     package="com.example.mystudy">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".imagePicker.App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -40,7 +43,33 @@
         <activity android:name=".ncalendardemo.NCalendarActivity" />
         <activity android:name=".ncalendardemo.MonthCalendarActivity" />
         <activity android:name=".ncalendardemo.WeekCalendarActivity" />
-        <activity android:name=".ncalendardemo.MonthAndWeekCalendarActivity"></activity>
+        <activity android:name=".ncalendardemo.MonthAndWeekCalendarActivity" />
+        <activity android:name=".bouncingBall.BouncingBallActivity" />
+        <activity android:name=".springAnimation.SpringAnimationActivity" />
+        <activity android:name=".niceDialog.NiceDialogActivity" />
+        <activity android:name=".stretchableFloatingBtn.StretchableFloatingBtnActivity" />
+        <activity android:name=".viewPagerTitle.ViewPagerTitleActivity" />
+        <activity
+            android:name=".doodleView.DoodleViewActivity"
+            android:label="@string/DoodleView"
+            android:theme="@style/DoodleView" />
+        <activity android:name=".autoScrollBack.AutoScrollBackActivity" />
+        <activity android:name=".autoScrollBack.ListViewDemoActivity" />
+        <activity android:name=".autoScrollBack.GridViewDemoActivity" />
+        <activity android:name=".autoScrollBack.RecyclerViewDemoActivity" />
+        <activity android:name=".matisse.MatisseActivity" />
+        <activity android:name=".ultimateBar.UltimateBarActivity" />
+        <activity android:name=".ultimateBar.ColorBarActivity" />
+        <activity android:name=".ultimateBar.TransparentBarActivity1" />
+        <activity android:name=".ultimateBar.TransparentBarActivity2" />
+        <activity android:name=".ultimateBar.ImmersionBarActivity" />
+        <activity android:name=".ultimateBar.HideBarActivity1" />
+        <activity android:name=".ultimateBar.HideBarActivity2" />
+        <activity android:name=".ultimateBar.DrawerActivity" />
+        <activity android:name=".refreshView.RefreshViewActivity" />
+        <activity android:name=".auditProgressView.AuditProgressViewActivity" />
+        <activity android:name=".imagePicker.ImagePickerActivity" />
+        <activity android:name=".tabLayout.TabLayoutActivity"></activity>
     </application>
 
 </manifest>

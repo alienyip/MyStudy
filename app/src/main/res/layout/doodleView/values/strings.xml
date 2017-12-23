@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="DoodleView">涂鸦</string>
+    <string name="PaintColor">画笔颜色</string>
+    <string name="PaintSize">画笔粗细</string>
+    <string name="PaintShape">画笔形状</string>
+    <string name="Reset">重画</string>
+    <string name="Save">保存</string>
+</resources>

@@ -1,1 +1,1 @@
-include ':app', ':loadbutton', ':expandablelibrary'
+include ':app', ':loadbutton', ':expandablelibrary', ':ncalendar', ':nicedialog', ':stretchablefloatingbutton', ':viewpagertitle', ':autoscrollback', ':ultimatebar', ':refreshview', ':imagepicker'

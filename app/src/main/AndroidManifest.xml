@@ -21,13 +21,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".popupWindow.PopupWindowActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <activity android:name=".popupWindow.PopupWindowActivity"/>
         <activity android:name=".loadButton.LoadButtonActivity" />
         <activity android:name=".itemDecoration.ItemDecorationActivity" />
         <activity android:name=".itemDecoration.DividerActivity" />
@@ -40,19 +34,10 @@
         <activity android:name=".expandableLinearLayout.ExpandableActivity" />
         <activity android:name=".expandableLinearLayout.EllDefaultBottomDemoActivity" />
         <activity android:name=".expandableLinearLayout.EllCustomBottomDemoActivity" />
-        <activity android:name=".ncalendardemo.NCalendarActivity" />
-        <activity android:name=".ncalendardemo.MonthCalendarActivity" />
-        <activity android:name=".ncalendardemo.WeekCalendarActivity" />
-        <activity android:name=".ncalendardemo.MonthAndWeekCalendarActivity" />
-        <activity android:name=".bouncingBall.BouncingBallActivity" />
         <activity android:name=".springAnimation.SpringAnimationActivity" />
         <activity android:name=".niceDialog.NiceDialogActivity" />
         <activity android:name=".stretchableFloatingBtn.StretchableFloatingBtnActivity" />
         <activity android:name=".viewPagerTitle.ViewPagerTitleActivity" />
-        <activity
-            android:name=".doodleView.DoodleViewActivity"
-            android:label="@string/DoodleView"
-            android:theme="@style/DoodleView" />
         <activity android:name=".autoScrollBack.AutoScrollBackActivity" />
         <activity android:name=".autoScrollBack.ListViewDemoActivity" />
         <activity android:name=".autoScrollBack.GridViewDemoActivity" />

@@ -25,13 +25,11 @@ android {
                     [
                             'src/main/res',
                             'src/main/res/layout',
-                            'src/main/res/layout/ncalendar',
                             'src/main/res/layout/cehuaDemo',
                             'src/main/res/layout/expandable',
                             'src/main/res/layout/itemDecoration',
                             'src/main/res/layout/loadButton',
                             'src/main/res/layout/popupWindow',
-                            'src/main/res/layout/bouncingBall',
                             'src/main/res/layout/springAnimation',
                             'src/main/res/layout/niceDialog',
                             'src/main/res/layout/stretchableFloatingBtn',

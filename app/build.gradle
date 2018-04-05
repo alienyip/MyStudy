@@ -34,7 +34,6 @@ android {
                             'src/main/res/layout/niceDialog',
                             'src/main/res/layout/stretchableFloatingBtn',
                             'src/main/res/layout/viewPagerTitle',
-                            'src/main/res/layout/doodleView',
                             'src/main/res/layout/autoScrollBack',
                             'src/main/res/layout/matisse',
                             'src/main/res/layout/ultimateBar',

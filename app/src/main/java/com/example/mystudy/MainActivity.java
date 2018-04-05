@@ -7,7 +7,6 @@ import android.support.v7.widget.RecyclerView;
 import com.example.mystudy.auditProgressView.AuditProgressViewActivity;
 import com.example.mystudy.autoScrollBack.AutoScrollBackActivity;
 import com.example.mystudy.cehuaDemo.CehuaActivity;
-import com.example.mystudy.doodleView.DoodleViewActivity;
 import com.example.mystudy.expandableLinearLayout.ExpandableActivity;
 import com.example.mystudy.imagePicker.ImagePickerActivity;
 import com.example.mystudy.itemDecoration.ItemDecorationActivity;
@@ -33,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
+        RecyclerView recyclerView =  findViewById(R.id.recyclerview);
         GridLayoutManager layoutManager = new GridLayoutManager(this, 3);
         recyclerView.setLayoutManager(layoutManager);
 
@@ -61,8 +60,6 @@ public class MainActivity extends AppCompatActivity {
         demoList.add(stretchableFloatingBtn);
         Demo viewPagerTitle = new Demo("ViewPagerTitle", ViewPagerTitleActivity.class, "http://www.jianshu.com/p/77e811e1c987");
         demoList.add(viewPagerTitle);
-        Demo doodleView = new Demo("DoodleView", DoodleViewActivity.class, "http://www.jianshu.com/p/f05f71446771");
-        demoList.add(doodleView);
         Demo autoScrollBack = new Demo("AutoScrollBack", AutoScrollBackActivity.class, "https://github.com/gaoneng102/AutoScrollBackLayout");
         demoList.add(autoScrollBack);
         Demo matisse = new Demo("Matisse", MatisseActivity.class, "http://www.jianshu.com/p/382346bf0aa9");
